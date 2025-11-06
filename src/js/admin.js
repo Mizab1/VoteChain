@@ -78,8 +78,7 @@ window.AdminApp = {
       }
       $("#networkInfo").html("Network: " + networkName);
 
-      // Add Murang'a University branding
-      document.title = "MUT Voting System - Admin Portal";
+      document.title = "Decentralized Voting System - Admin Portal";
 
     } catch (error) {
       console.error("Error initializing application:", error);
