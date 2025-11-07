@@ -1,3 +1,4 @@
+/* --- Global Styles --- */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -9,9 +10,9 @@ body {
     min-height: 60vh;
     background: url('../assets/eth5.jpg') no-repeat center center fixed;
     background-size: cover;
-  }
+}
 
-  .container {
+.container {
     width: 900px;
     max-width: 1100px;
     background-color: rgba(0, 0, 0, 0.650);
@@ -20,86 +21,37 @@ body {
     box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
-  legend {
+legend {
     color: #ffffff;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-  }
+}
 
-  h1 {
+h1 {
     font-size: 32px;
     color: #ffffff;
     margin-bottom: 30px;
-  }
+}
 
-  h2 {
+h2 {
     font-size: 25px;
     color: #ffffff;
     margin-bottom: 25px;
-  }
+}
 
-  h3 {
+h3 {
     color: #ffffff;
-  }
+}
 
-  p {
+p {
     color: #ffffff;
-  }
+}
 
-  .table {
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: rgba(124, 123, 123, 0.65);
-    border-radius: 5px;
-    border-collapse: separate;
-    border-spacing: 25px;
-  }
-
-  th {
-    font-size: 18px;
-    color: #ffffff;
-  }
-
-  td {
-    font-size: 16px;
-    color: #ffffff;
-    row-gap: 100%;
-  }
-
-  #voteButton {
-    width: 40%;
-    padding: 12px;
-    background-color: #198a7b;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 19px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  #voteButton:hover {
-    background-color: #44afa1;
-  }
-
-  #voteButton:focus {
-    outline: none;
-  }
-
-  #voteButton:active {
-    transform: translateY(2px);
-  }
-
-  #accountAddress {
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 20px;
-  }
-
-  .account-switcher {
+/* --- Account/Network Switcher --- */
+.account-switcher {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,9 +63,16 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .btn-switch, .btn-refresh {
+#accountAddress {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px; /* Kept for compatibility with other debug info */
+}
+
+/* --- Generic Button Styles (Switch/Refresh) --- */
+.btn-switch, .btn-refresh {
     background-color: #198a7b;
     color: white;
     border: none;
@@ -123,105 +82,110 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-  }
+}
 
-  .btn-switch:hover, .btn-refresh:hover {
+.btn-switch:hover, .btn-refresh:hover {
     background-color: #44afa1;
-  }
+}
 
-  .btn-refresh {
+.btn-refresh {
     background-color: #4a6fa5;
-  }
+}
 
-  .btn-refresh:hover {
+.btn-refresh:hover {
     background-color: #6789bd;
-  }
+}
 
-  .elections-table {
+/* --- Election Table Styles (Main/Results View) --- */
+.elections-table, .results-table { /* Merged .results-table with .elections-table to consolidate look */
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
     color: white;
-  }
+}
 
-  .elections-table th, .elections-table td {
+.elections-table th, .elections-table td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
+}
 
-  .elections-table th {
+.elections-table th {
     background-color: rgba(0, 0, 0, 0.3);
-  }
+}
 
-  .status-active {
+/* --- Status Badges --- */
+.status-active {
     color: #28a745;
     font-weight: bold;
-  }
+}
 
-  .status-ended {
+.status-ended {
     color: #dc3545;
-  }
+}
 
-  .status-upcoming {
+.status-upcoming {
     color: #ffc107;
-  }
+}
 
-  .btn-vote, .btn-view, .btn-voted {
+/* --- Action Buttons (Table actions) --- */
+.btn-vote, .btn-view, .btn-voted {
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
-  }
+}
 
-  .btn-vote {
+.btn-vote {
     background-color: #28a745;
     color: white;
-  }
+}
 
-  .btn-vote:hover {
+.btn-vote:hover {
     background-color: #218838;
-  }
+}
 
-  .btn-view {
+.btn-view {
     background-color: #17a2b8;
     color: white;
-  }
+}
 
-  .btn-view:hover {
+.btn-view:hover {
     background-color: #138496;
-  }
+}
 
-  .btn-voted {
+.btn-voted {
     background-color: #6c757d;
     color: white;
     cursor: not-allowed;
-  }
+}
 
-  .candidate-option {
+/* --- Voting Ballot Candidates --- */
+.candidate-option {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-  }
+}
 
-  .candidate-option input {
+.candidate-option input {
     margin-right: 10px;
-  }
+}
 
-  .candidate-option label {
+.candidate-option label {
     color: white;
     font-size: 16px;
-  }
+}
 
-  .form-actions {
+/* --- Form Actions (Submit/Cancel) --- */
+.form-actions {
     margin-top: 20px;
-  }
+}
 
-  .btn-primary {
+.btn-primary { /* Submit Button */
     background-color: #198a7b;
     color: white;
     border: none;
@@ -229,13 +193,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-  }
+}
 
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #44afa1;
-  }
+}
 
-  .btn-secondary {
+.btn-secondary { /* Cancel/Back Button */
     background-color: #6c757d;
     color: white;
     border: none;
@@ -244,14 +208,15 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-left: 10px;
-  }
+}
 
-  .btn-secondary:hover {
+.btn-secondary:hover {
     background-color: #5a6268;
-  }
+}
 
-  @media (max-width: 768px) {
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
     .container {
-      width: 90%;
+        width: 90%;
     }
-  }
+}
