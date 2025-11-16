@@ -32,5 +32,6 @@ loginForm.addEventListener('submit', (event) => {
   })
   .catch(error => {
     console.error('Login failed:', error.message);
+    window.location.replace(`http://localhost:8080/wrong_credentials.html`);
   });
 });

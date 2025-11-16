@@ -67,6 +67,10 @@ app.get('/index.html', authorizeUser, (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/index.html'));
 });
 
+app.get('/wrong_credentials.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src/html/wrong_credentials.html'));
+});
+
 app.get('/dist/login.bundle.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/dist/login.bundle.js'));
 });
