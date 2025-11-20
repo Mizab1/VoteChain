@@ -274,6 +274,8 @@ window.VoterApp = {
 
     try {
       voteStatus.html("Processing your vote...");
+      voteStatus.css("color", "yellow");
+      voteStatus.css("padding", "15px");
       submitBtn.prop("disabled", true);
       
       const electionId = parseInt($("#electionId").val());
