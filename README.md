@@ -33,4 +33,4 @@ A secure, transparent, and hybrid voting application that combines the security 
 ![Image](images/Picture2.png)
 ![Image](images/Picture4.png)
 ![Image](images/Picture6.png)
-<img src="images/Picture7.png" width=62% height=62%>
+<img src="images/Picture7.png" width=80% height=80%>
