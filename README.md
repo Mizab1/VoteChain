@@ -2,7 +2,7 @@
 
 A secure, transparent, and hybrid voting application that combines the security of the Ethereum blockchain with a user-friendly Web2 authentication layer. This system ensures that while user authentication is handled centrally, all votes are cast and tallied directly on the blockchain, making them immutable and tamper-proof.
 
-## 🚀 Features
+## Features
 
 * **Hybrid Architecture:** Web2 login (MySQL + JWT) for access control combined with Web3 (Ethereum) for voting.
 * **Role-Based Access:** * **Admin Portal:** Create elections, define timeframes, and add candidates.
@@ -12,7 +12,7 @@ A secure, transparent, and hybrid voting application that combines the security 
 * **Secure Authentication:** JSON Web Tokens (JWT) used for session management.
 * **Double-Vote Prevention:** Smart contracts ensure each wallet address can vote only once per election.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Blockchain Layer
 * **Solidity:** Smart Contract development.
@@ -28,3 +28,6 @@ A secure, transparent, and hybrid voting application that combines the security 
 * **Node.js (Express):** Web server to serve static files and handle routing.
 * **HTML/CSS/JS:** Responsive user interface.
 * **Metamask:** Browser extension for wallet management and transaction signing.
+
+## Images
+
