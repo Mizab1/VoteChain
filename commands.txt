@@ -1,0 +1,13 @@
+1. Open MySQL and create a database named voter_db
+2. Create the voters table:
+    CREATE TABLE voters (
+    voter_id VARCHAR(36) PRIMARY KEY NOT NULL,
+    role ENUM('admin', 'user') NOT NULL,
+    password VARCHAR(255) NOT NULL
+    );
+3. Add sample users:
+    INSERT INTO voters (voter_id, role, password)
+    VALUES ('admin1', 'admin', 'admin123');
+
+    INSERT INTO voters (voter_id, role, password)
+    VALUES ('user1', 'user', 'user123');
