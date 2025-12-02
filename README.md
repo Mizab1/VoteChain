@@ -30,7 +30,7 @@ A secure, transparent, and hybrid voting application that combines the security 
 * **Metamask:** Browser extension for wallet management and transaction signing.
 
 ## Images
-![Image](images/Picture2.png)
-![Image](images/Picture4.png)
-![Image](images/Picture6.png)
-<img src="images/Picture7.png" width=80% height=80%>
+![Image](images/votechain_2.png)
+![Image](images/votechain_4.png)
+![Image](images/votechain_6.png)
+<img src="images/votechain_7.png" width=80% height=80%>
