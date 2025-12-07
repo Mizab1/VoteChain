@@ -5,7 +5,8 @@ A secure, transparent, and hybrid voting application that combines the security 
 ## Features
 
 * **Hybrid Architecture:** Web2 login (MySQL + JWT) for access control combined with Web3 (Ethereum) for voting.
-* **Role-Based Access:** * **Admin Portal:** Create elections, define timeframes, and add candidates.
+* **Role-Based Access:**
+    * **Admin Portal:** Create elections, define timeframes, and add candidates.
     * **Voter Portal:** View active elections and cast votes securely.
 * **Immutable Voting:** Votes are recorded as transactions on the Ethereum blockchain via Smart Contracts.
 * **Real-Time Tallying:** Live election results fetched directly from the blockchain.
